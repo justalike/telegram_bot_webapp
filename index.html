@@ -35,13 +35,11 @@
           let surname = document.getElementById('surname');
           let email = document.getElementById('email');
           
-          const {id } = telegram.initDataUnsafe.user
-            telegram.expand()
+         telegram.expand()
           let data = {
             name: name.value,
             surname: surname.value,
             email: email.value,
-            userid: id || 193596536
             
           }
         
