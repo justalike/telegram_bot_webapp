@@ -34,21 +34,20 @@
           let surname = document.getElementById('surname');
           let email = document.getElementById('email');
           let id = telegram.initDataUnsafe.user.id
-          submit.addEventListener("click", () => {
-            console.log(telegram)
-          document.getElementById('sendButton').style.display = "none"
-            telegram.expand()
-          let data = {
-            name: name.value,
-            surname: surname.value,
-            email: email.value,
-            id: id
-          }
-        
-          telegram.sendData(JSON.stringify(data))
+         submit.addEventListener("click", () => {
+  document.getElementById('sendButton').style.display = "none";
+  telegram.expand();
+  let data = {
+    name: name.value,
+    surname: surname.value,
+    email: email.value,
+    id: id
+  };
+  document.getElementById('telegramValue').innerHTML = telegram; // Update the content of the element with the value of the telegram variable
+  telegram.sendData(JSON.stringify(data));
+  telegram.close();
+});
 
-          telegram.close()
-          })
       </script>
   </main>
     <footer></footer>
