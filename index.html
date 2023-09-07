@@ -31,17 +31,20 @@
           let name = document.getElementById('name');
           let surname = document.getElementById('surname');
           let email = document.getElementById('email');
-
+          let id = telegram.initDataUnsafe().user.id
           sumbit.addEventListener("click", () => {
           document.getElementById('sendButton').style.display = "none"
 
           let data = {
             name: name.value,
             surname: surname.value,
-            email: email.value
+            email: email.value,
+            id: id
           }
         
           telegram.sendData(JSON.stringify(data))
+
+          telegram.close()
           })
       </script>
   </main>
