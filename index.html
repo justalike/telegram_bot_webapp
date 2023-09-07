@@ -31,7 +31,7 @@
           let name = document.getElementById('name');
           let surname = document.getElementById('surname');
           let email = document.getElementById('email');
-          let id = telegram.initDataUnsafe.user.id
+         const { first_name, last_name, username, id } = window.Telegram.WebApp.initDataUnsafe.user
           submit.addEventListener("click", () => {
           document.getElementById('sendButton').style.display = "none"
             telegram.expand()
