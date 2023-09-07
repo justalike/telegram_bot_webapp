@@ -20,7 +20,7 @@
         <input type="text" id="surname" name="surname" required><br>
       
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="email@mail.com" required><br>
+        <input type="email" id="email" name="email" required><br>
       
         <button type="submit" id="sendButton">Send Data</button>
       </form>
@@ -28,7 +28,6 @@
       <script> 
           let telegram = window.Telegram.WebApp;
           let logo = document.getElementById('logo');
-          let submit = document.getElementById('infoForm');
           
           let submitButton = document.getElementById('sendButton');
           submitButton.addEventListener("click", () => {
@@ -36,7 +35,7 @@
           let surname = document.getElementById('surname');
           let email = document.getElementById('email');
           
-          const {id, first_name, last_name, username, language_code, photo_url} = telegram.initDataUnsafe?.user
+          const {id, first_name, last_name, username, language_code, photo_url} = telegram.initDataUnsafe.user
             telegram.expand()
           let data = {
             name: name.value,
