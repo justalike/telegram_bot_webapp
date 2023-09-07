@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bot submission form</title>
+    <title>Bot sumbission form</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-
+    
     <header>
-      <img src="circle logo.png" alt="Logo" id="logo">
+      <img src="circle logo.png " alt="Logo" id="logo">
     </header>
     <main>
-      <form action="https://example.com/submit" method="POST">
+      <form>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required><br>
 
@@ -31,23 +31,37 @@
           let name = document.getElementById('name');
           let surname = document.getElementById('surname');
           let email = document.getElementById('email');
-          let id = telegram.initDataUnsafe().user.id;
+          let id = telegram.initDataUnsafe().user.id
           submit.addEventListener("click", () => {
-            document.getElementById('sendButton').style.display = "none";
+          document.getElementById('sendButton').style.display = "none"
 
-            let data = {
-              name: name.value,
-              surname: surname.value,
-              email: email.value,
-              id: id
-            };
+          let data = {
+            name: name.value,
+            surname: surname.value,
+            email: email.value,
+            id: id
+          }
+        
+          telegram.sendData(JSON.stringify(data))
 
-            telegram.sendData(JSON.stringify(data));
-
-            telegram.close();
-          });
+          telegram.close()
+          })
       </script>
   </main>
     <footer></footer>
   </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+    <header>
+       
+    </header>
+   
+</body>
 </html>
