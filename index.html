@@ -27,28 +27,26 @@
       
       <script> 
           let telegram = window.Telegram.WebApp;
-          
           let logo = document.getElementById('logo');
           let submit = document.getElementById('sendButton');
           let name = document.getElementById('name');
           let surname = document.getElementById('surname');
           let email = document.getElementById('email');
           let id = telegram.initDataUnsafe.user.id
-
           submit.addEventListener("click", () => {
-  document.getElementById('sendButton').style.display = "none";
-  telegram.expand();
-  let data = {
-    name: name.value,
-    surname: surname.value,
-    email: email.value,
-    id: id
-  };
-  document.getElementById('telegramValue').innerHTML = telegram; // Update the content of the element with the value of the telegram variable
-  telegram.sendData(JSON.stringify(data));
-  telegram.close();
-});
+          
+            telegram.expand()
+          let data = {
+            name: name.value,
+            surname: surname.value,
+            email: email.value,
+            id: id
+          }
+        
+          telegram.sendData(JSON.stringify(data))
 
+          telegram.close()
+          })
       </script>
   </main>
     <footer></footer>
