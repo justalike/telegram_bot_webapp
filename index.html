@@ -34,7 +34,7 @@
           let id = telegram.initDataUnsafe().user.id
           submit.addEventListener("click", () => {
           document.getElementById('sendButton').style.display = "none"
-
+            telegram.expand()
           let data = {
             name: name.value,
             surname: surname.value,
