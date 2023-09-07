@@ -22,7 +22,7 @@
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required><br>
 
-          <button type="button" id="sendButton">Send Data</button>
+          <button type="submit" id="sendButton">Send Data</button>
       </form>
       
       <script> 
@@ -34,7 +34,7 @@
           let surname = document.getElementById('surname');
           let email = document.getElementById('email');
           let id = telegram.initDataUnsafe.user.id
-         submit.addEventListener("click", () => {
+         sendButton.addEventListener("click", () => {
   document.getElementById('sendButton').style.display = "none";
   telegram.expand();
   let data = {
