@@ -16,12 +16,12 @@ footer {
     color: var(--tg-theme-text-color);
 }
 body {
+    margin:auto;
     width: 100%;
     padding: 20px;
     font-family: Arial, sans-serif;
-    color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
-    margin:auto;
+    color: var(--tg-theme-text-color);
 }
 
 #logo {
@@ -37,6 +37,8 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 15px; 
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
 }
 
 label, input {
@@ -44,6 +46,8 @@ label, input {
     margin: 10px auto;
     font-size: 16px;
     margin: auto;
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
 }
 
 label { 
