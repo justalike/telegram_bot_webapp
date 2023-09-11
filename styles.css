@@ -26,12 +26,12 @@ form {
 label, input {
     display: block;
     margin: 10px 0;
-    color: grey;
+    color: var(--tg-theme-button-text-color);
 }
 
 input {
     border: none;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
     border-radius: 3px;
     background-color: var(--tg-theme-button-color);;
 }
