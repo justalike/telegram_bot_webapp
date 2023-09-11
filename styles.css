@@ -49,7 +49,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 13px;
-    /* grid-column: span 2;  */
+    grid-column: span 2;
 }
 
 [id*=flat-slider].ui-slider, [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#FFFFFF , 25%); }
