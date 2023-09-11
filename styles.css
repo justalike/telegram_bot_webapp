@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
 }
 
 header {
@@ -31,12 +33,12 @@ input {
     border: none;
     border-bottom: 1px solid lightgray;
     border-radius: 3px;
-    background-color: lightgrey;
+    background-color: var(--tg-theme-button-color);;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     padding: 10px 20px;
     border: none;
     cursor: pointer;
