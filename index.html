@@ -13,16 +13,25 @@
     </header>
     <main>
       <form id="infoForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+        <label for="name">Торговая пара:</label>
+        <input type="text" id="pair" name="pair" required><br>
       
-        <label for="surname">Surname:</label>
-        <input type="text" id="surname" name="surname" required><br>
+        <label for="surname">Таймфрейм:</label>
+        <input type="text" id="timeframe" name="timeframe" required><br>
       
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+        <label for="email">Длинная MA:</label>
+        <input type="email" id="longMA" name="longMA" ><br>
+        
+          <label for="email">Короткая MA:</label>
+        <input type="email" id="shortMA" name="shortMA" ><br>
+        
+         <label for="email">Длинный мультипликатор:</label>
+        <input type="email" id="longX" name="longX" ><br>
+        
+          <label for="email">Короткий мультипликатор:</label>
+        <input type="email" id="shortX" name="shortX" ><br>
       
-        <button type="submit" id="sendButton">Send Data</button>
+        <button type="submit" id="sendButton">Отправить</button>
       </form>
       
       <script> 
@@ -30,16 +39,23 @@
           let logo = document.getElementById('logo');
           
           let submitButton = document.getElementById('sendButton');
+        
           submitButton.addEventListener("click", () => {
-          let name = document.getElementById('name');
-          let surname = document.getElementById('surname');
-          let email = document.getElementById('email');
+          let pair = document.getElementById('pair');
+          let timeframe = document.getElementById('timeframe');
+          let longMA = document.getElementById('longMA');
+          let shortMA = document.getElementById('shortMA');
+          let longX = document.getElementById('longX');
+          let shortX = document.getElementById('email');
           
          telegram.expand()
           let data = {
-            name: name.value,
-            surname: surname.value,
-            email: email.value,
+            pair: pair.value,
+            timeframe: timeframe.value,
+            longMA: longMA.value,
+            shortMA: shortMA.value,
+            longX: longX.value,
+            shortX: longX.value,
             
           }
         

@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: var(--tg-color-scheme);
     padding: 10px;
 }
 
@@ -15,7 +15,7 @@ header {
 
 form {
     margin: 20px auto;
-    max-width: 300px;
+    max-width: 170px;
 }
 
 label, input {
@@ -23,10 +23,18 @@ label, input {
     margin: 10px 0;
 }
 
+input {
+    border: none;
+    border-bottom: 1px solid lightgray;
+    border-radius: 3px
+}
+
+
 button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 13px
 }
