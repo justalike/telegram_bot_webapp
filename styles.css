@@ -12,7 +12,7 @@ header {
 
 form {
     margin: 10px auto;
-    max-width: 100px; 
+    max-width: 350px; 
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 15px; 
@@ -47,7 +47,7 @@ button {
     grid-column: span 2; 
 }
 
-[id*=flat-slider].ui-slider, [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#FFFFFF , 25%); }
+[id*=flat-slider].ui-slider, [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#e6e6e6 , 25%); }
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-hover, 
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-focus, 
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-active { border-color: white; }
@@ -63,7 +63,7 @@ body {
     display: flex;
      align-items: left;
      height: 30px;
-     width: 220px }
+     width: 250px }
 
 .slider-value { width:50px; margin-right: 5px; padding: 12px 3px; }
 
