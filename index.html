@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Volume Detector add pair</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jqueryui.min.css">
     <link rel="stylesheet", type="text/css" href="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jquery-ui-slider-pips.min.css">
     <link rel="stylesheet", type="text/css" href="https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/app.min.css">
@@ -20,7 +20,6 @@
       <img src="circle logo.png" alt="Logo" id="logo">
     </header>
     <main>
-      <form id="infoForm">
   <div>
     <label for="pair">Торговая пара:</label>
     <input type="text" id="pair" name="pair" required>
@@ -60,14 +59,12 @@
   <button type="submit" id="sendButton">Отправить</button>
 </form>
       
-
-
       <script> 
           let telegram = window.Telegram.WebApp;
           let logo = document.getElementById('logo');
-          
-          let submitButton = document.getElementById('sendButton');
           telegram.expand()
+          let submitButton = document.getElementById('sendButton');
+          
           submitButton.addEventListener("click", () => {
           let pair = document.getElementById('pair');
           let timeframe = document.getElementById('timeframe');
@@ -83,7 +80,7 @@
             longMA: longMA.value,
             shortMA: shortMA.value,
             longX: longX.value,
-            shortX: longX.value,
+            shortX: shortX.value,
             
           }
         
