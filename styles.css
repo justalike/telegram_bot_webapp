@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: left;
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
 }
@@ -10,35 +10,34 @@ header {
     padding: 10px;
 }
 #logo {
-
     width: 100px;
     height: 100px;
-
+    text-align: left;
 }
 
 form {
     margin: 10px auto;
-    max-width: 300px; 
+    max-width: 100px; 
     display: grid;
-    grid-template-columns: 2fr 2fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
 }
 
 label, input {
     display: block;
-    margin: 5px auto;
-    color: var(--tg-theme-button-text-color);
+    margin: auto auto;
+    
 }
 
 label { 
   font-size: 16px; 
-  font-weight: bold
-
+  font-weight: bold;
+  color: var(--tg-theme-button-text-color);
 }
 
 input {
     border: none;
-    border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
+    border-bottom: 1px solid var(--tg-theme-bg-color);
     border-radius: 3px;
     background-color: var(--tg-theme-secondary-bg-color);
 }
@@ -53,18 +52,21 @@ button {
     grid-column: span 2; 
 }
 
-[id*=flat-slider].ui-slider, 
-[id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#FFFFFF , 25%); }
+[id*=flat-slider].ui-slider, [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#FFFFFF , 25%); }
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-hover, 
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-focus, 
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-active { border-color: white; }
 
-body { background: var(--tg-theme-bg-color); font-family: Arial, sans-serif; }
+body { 
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color); }
 
 
 .slider-container { display: flex; align-items: left;
-  height: 50px; width: 200px }
+  height: 30px; width: 220px }
 
-.slider-value { width:50px; margin-right: 20px; padding: 10px 10px; }
+.slider-value { width:50px; margin-right: 5px; padding: 12px 3px; }
 
-.slider { flex-grow: 1; margin-top: 10px; margin-left: 20px } 
+.slider { flex-grow: 1; margin-top: 10px; margin-left: 10px } 
