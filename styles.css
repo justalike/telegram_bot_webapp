@@ -9,18 +9,17 @@ header {
     background-color: var(--tg-color-scheme);
     padding: 10px;
 }
-
 #logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 form {
-    margin: 30px auto;
-    max-width: 350px; /* Adjust the width as needed */
+    margin: 0px auto;
+    max-width: 340px; 
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-    gap: 25px; /* Gap between the columns */
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
 }
 
 label, input {
@@ -43,5 +42,5 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 13px;
-    grid-column: span 3; /* Button spans both columns */
+    grid-column: span 3; 
 }
