@@ -1,64 +1,85 @@
+header{ 
+    text-align: left;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+}
 
-
+footer { 
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
+}
 body {
     width: 100%;
     padding: 20px;
     font-family: Arial, sans-serif;
-    text-align: left;
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
+    margin:auto;
 }
 
 #logo {
     width: 100px;
     height: 100px;
-    text-align: left;
+    margin-left: 140px
+    
 }
 
 form {
     margin: 10px auto;
-    max-width: 350px; 
+    max-width: 400px; 
     display: grid;
-    grid-template-columns: auto; 
+    grid-template-columns: 1fr 1fr; 
     gap: 15px; 
 }
 
 label, input {
     display: block;
     margin: 10px auto;
-    
+    font-size: 16px;
+    margin: auto;
 }
 
 label { 
-  font-size: 16px; 
   font-weight: bold;
   color: rgb(60, 128, 150)
 }
 
 input {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgrey;
     border-radius: 3px;
     padding: 5px 10px;
     font-size: 16px;
     color: var(--tg-theme-text-color);
+    
 }
-
 button {
-    background: var(--tg-theme-bg-color);
+    background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     padding: 10px 10px;
     border: none;
     cursor: pointer;
     border-radius: 13px;
+    grid-column: span 2; 
 }
-
+  
+button:active {
+    transform: scale(0.95);
+  }
+  
 button:hover {
-background: var(--tg-theme-secondary-bg-color)
-}
+    background: var(--tg-theme-secondary-bg-color);
+  }
 
 [id*=slider-container].ui-slider,
-[id*=slider-container].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#e3ff97 , 25%); }
+[id*=slider-container].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#000000 , 25%); }
 [id*=slider-container].ui-slider .ui-slider-handle.ui-state-hover, 
 [id*=slider-container].ui-slider .ui-slider-handle.ui-state-focus, 
 [id*=slider-container].ui-slider .ui-slider-handle.ui-state-active { border-color: black; }
@@ -66,10 +87,9 @@ background: var(--tg-theme-secondary-bg-color)
 
 .slider-container { 
     display: flex;
-     align-items: left;
-     height: 30px;
-     width: 250px }
+     height: 35px;
+     width: 180px }
 
-.slider-value { width:50px; margin-right: 5px; padding: 12px 3px; }
+.slider-value { width:40px; padding: 10px 3px; }
 
 .slider { flex-grow: 1; margin-top: 10px; margin-left: 10px } 
