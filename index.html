@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bot sumbission form</title>
+    <title>Volume Detector add pair</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
   </head>
@@ -18,19 +18,21 @@
       
         <label for="surname">Таймфрейм:</label>
         <input type="text" id="timeframe" name="timeframe" required><br>
+      <div id="longFields">
+      <label for="longMA">Длинная MA:</label>
+      <input type="number" id="longMA" name="longMA" >
       
-        <label for="email">Длинная MA:</label>
-        <input type="email" id="longMA" name="longMA" ><br>
-        
-          <label for="email">Короткая MA:</label>
-        <input type="email" id="shortMA" name="shortMA" ><br>
-        
-         <label for="email">Длинный мультипликатор:</label>
-        <input type="email" id="longX" name="longX" ><br>
-        
-          <label for="email">Короткий мультипликатор:</label>
-        <input type="email" id="shortX" name="shortX" ><br>
+      <label for="longX">Длинный мультипликатор:</label>
+      <input type="number" id="longX" name="longX" >
+    </div>
+    
+    <div id="shortFields">
+      <label for="shortMA">Короткая MA:</label>
+      <input type="number" id="shortMA" name="shortMA" >
       
+      <label for="shortX">Короткий мультипликатор:</label>
+      <input type="number" id="shortX" name="shortX" >
+    </div>
         <button type="submit" id="sendButton">Отправить</button>
       </form>
       
@@ -46,10 +48,9 @@
           let longMA = document.getElementById('longMA');
           let shortMA = document.getElementById('shortMA');
           let longX = document.getElementById('longX');
-          let shortX = document.getElementById('shortX');
+          let shortX = document.getElementById('email');
           
          telegram.expand()
-
           let data = {
             pair: pair.value,
             timeframe: timeframe.value,

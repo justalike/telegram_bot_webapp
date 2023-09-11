@@ -9,13 +9,16 @@ header {
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 
 form {
-    margin: 20px auto;
-    max-width: 170px;
+    margin: 30px auto;
+    max-width: 350px; /* Adjust the width as needed */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 25px; /* Gap between the columns */
 }
 
 label, input {
@@ -29,12 +32,12 @@ input {
     border-radius: 3px
 }
 
-
 button {
     background-color: #4CAF50;
-    color: white;
+    color: rgb(201, 201, 201);
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 13px
+    border-radius: 13px;
+    grid-column: span 3; /* Button spans both columns */
 }
