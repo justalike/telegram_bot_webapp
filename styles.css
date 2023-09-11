@@ -10,13 +10,15 @@ header {
     padding: 10px;
 }
 #logo {
+
     width: 100px;
     height: 100px;
+
 }
 
 form {
     margin: 10px auto;
-    max-width: 500px; 
+    max-width: 300px; 
     display: grid;
     grid-template-columns: 2fr 2fr; 
     gap: 20px; 
@@ -59,9 +61,9 @@ button {
 body { background: var(--tg-theme-bg-color); font-family: Arial, sans-serif; }
 
 
-.slider-container { display: flex; align-items: left; justify-content: center;
-  height: 50px; width: 350px }
+.slider-container { display: flex; align-items: left;
+  height: 50px; width: 200px }
 
-.slider-value { width:100px; margin-right: 20px; padding: 10px 10px; }
+.slider-value { width:50px; margin-right: 20px; padding: 10px 10px; }
 
 .slider { flex-grow: 1; margin-top: 10px; margin-left: 20px } 
