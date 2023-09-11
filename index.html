@@ -9,33 +9,51 @@
   <body>
     
     <header>
-      <img src="circle logo.png " alt="Logo" id="logo">
+      <img src="https://i.gyazo.com/170c7d1bf3b977a71ca5ba665030f411.png " alt="Logo" id="logo">
     </header>
     <main>
       <form id="infoForm">
-        <label for="name">Торговая пара:</label>
-        <input type="text" id="pair" name="pair" required><br>
+  <div>
+    <label for="pair">Торговая пара:</label>
+    <input type="text" id="pair" name="pair" required>
+  </div>
       
-        <label for="surname">Таймфрейм:</label>
-        <input type="text" id="timeframe" name="timeframe" required><br>
-      <div id="longFields">
-      <label for="longMA">Длинная MA:</label>
-      <input type="number" id="longMA" name="longMA" >
-      
-      <label for="longX">Длинный мультипликатор:</label>
-      <input type="number" id="longX" name="longX" >
-    </div>
+  <div>
+    <label for="timeframe">Таймфрейм:</label>
+    <input type="text" id="timeframe" name="timeframe" required>
+  </div>
+  
+  <div class="slider-container">
+    <label for="longMA-value">Long MA:</label>
+    <div id="longMA-slider" class="slider"></div>
+       <input type="number" id="longMA-value", value=50 class="slider-value" min="1" max="500">
+  </div>
+
+  <div class="slider-container">
+    <label for="shortMA-value">Short MA:</label>
+    <div id="shortMA-slider" class="slider"></div>
+      <input type="number" id="shortMA-value", value=20 class="slider-value" min="1" max="500">
+  </div>
+
+  <div class="slider-container">
+    <label for="longX-value">Long X:</label>
+   
+    <div id="longX-slider" class="slider"></div>
+<!--        <input type="number" id="longX-value", value=2 class="slider-value" min="1" max="50"> -->
+  </div>
+
+  <div class="slider-container">
+    <label for="shortX-value">Short X:</label>
     
-    <div id="shortFields">
-      <label for="shortMA">Короткая MA:</label>
-      <input type="number" id="shortMA" name="shortMA" >
+    <div id="shortX-slider" class="slider"></div>
+<!--       <input type="number" id="shortX-value", value=5 class="slider-value" min="1" max="50"> -->
+  </div>
+
+  <button type="submit" id="sendButton">Отправить</button>
+</form>
       
-      <label for="shortX">Короткий мультипликатор:</label>
-      <input type="number" id="shortX" name="shortX" >
-    </div>
-        <button type="submit" id="sendButton">Отправить</button>
-      </form>
-      
+
+
       <script> 
           let telegram = window.Telegram.WebApp;
           let logo = document.getElementById('logo');

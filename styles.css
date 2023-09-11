@@ -15,17 +15,23 @@ header {
 }
 
 form {
-    margin: 0px auto;
-    max-width: 340px; 
+    margin: 10px auto;
+    max-width: 500px; 
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 10px; 
+    grid-template-columns: 2fr 2fr; 
+    gap: 20px; 
 }
 
 label, input {
     display: block;
-    margin: 10px 0;
+    margin: 5px auto;
     color: var(--tg-theme-button-text-color);
+}
+
+label { 
+  font-size: 16px; 
+  font-weight: bold
+
 }
 
 input {
@@ -38,9 +44,24 @@ input {
 button {
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
     border-radius: 13px;
-    grid-column: span 3; 
+    grid-column: span 2; 
 }
+
+[id*=flat-slider].ui-slider, [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#FFFFFF , 25%); }
+[id*=flat-slider].ui-slider .ui-slider-handle.ui-state-hover, 
+[id*=flat-slider].ui-slider .ui-slider-handle.ui-state-focus, 
+[id*=flat-slider].ui-slider .ui-slider-handle.ui-state-active { border-color: white; }
+
+body { background: var(--tg-theme-bg-color); font-family: Arial, sans-serif; }
+
+
+.slider-container { display: flex; align-items: left; justify-content: center;
+  height: 50px; width: 350px }
+
+.slider-value { width:100px; margin-right: 20px; padding: 10px 10px; }
+
+.slider { flex-grow: 1; margin-top: 10px; margin-left: 20px } 
