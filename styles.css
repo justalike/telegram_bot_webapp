@@ -1,9 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: left;
-    color: var(--tg-theme-text-color);
-    background: var(--tg-theme-bg-color);
-}
+
 
 header {
     background-color: var(--tg-color-scheme);
@@ -32,7 +27,7 @@ label, input {
 label { 
   font-size: 16px; 
   font-weight: bold;
-  color: lightgray
+  color: var(--tg-theme-text-color)
 }
 
 input {
@@ -49,7 +44,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 13px;
-    grid-column: span 2;
+    grid-column: span 2; 
 }
 
 [id*=flat-slider].ui-slider, [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#FFFFFF , 25%); }
@@ -58,7 +53,12 @@ button {
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-active { border-color: white; }
 
 
-
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
 .slider-container { 
     display: flex;
      align-items: left;
