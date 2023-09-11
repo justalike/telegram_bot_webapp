@@ -24,17 +24,19 @@ form {
 label, input {
     display: block;
     margin: 10px 0;
+    color: grey;
 }
 
 input {
     border: none;
     border-bottom: 1px solid lightgray;
-    border-radius: 3px
+    border-radius: 3px;
+    background-color: lightgrey;
 }
 
 button {
     background-color: #4CAF50;
-    color: rgb(201, 201, 201);
+    color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
