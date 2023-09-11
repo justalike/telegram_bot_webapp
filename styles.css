@@ -33,7 +33,7 @@ input {
     border: none;
     border-bottom: 1px solid var(--tg-theme-secondary-bg-color);
     border-radius: 3px;
-    background-color: var(--tg-theme-button-color);;
+    background-color: var(--tg-theme-secondary-bg-color);
 }
 
 button {
