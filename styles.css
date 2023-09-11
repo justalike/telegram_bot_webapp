@@ -1,7 +1,7 @@
 
 
 header {
-    background-color: var(--tg-color-scheme);
+    background-color: var(--tg-theme-bg-color);
     padding: 10px;
 }
 #logo {
@@ -32,7 +32,7 @@ label {
 
 input {
     border: none;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid black;
     border-radius: 3px;
     background-color: var(--tg-theme-bg-color);
 }
@@ -47,13 +47,15 @@ button {
     grid-column: span 2; 
 }
 
-[id*=flat-slider].ui-slider, [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#e6e6e6 , 25%); }
+[id*=flat-slider].ui-slider, [id*=flat-slider].ui-slider .ui-slider-pip .ui-slider-line { background: lighten(#000000 , 25%); }
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-hover, 
 [id*=flat-slider].ui-slider .ui-slider-handle.ui-state-focus, 
-[id*=flat-slider].ui-slider .ui-slider-handle.ui-state-active { border-color: white; }
+[id*=flat-slider].ui-slider .ui-slider-handle.ui-state-active { border-color: black; }
 
 
 body {
+    width: 100%;
+    padding: 20px;
     font-family: Arial, sans-serif;
     text-align: left;
     color: var(--tg-theme-text-color);
