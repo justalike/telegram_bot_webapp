@@ -6,10 +6,6 @@ header, footer, body {
     color: var(--tg-theme-text-color);
 }
 
-header {
-    text-align: center;
-}
-
 
 body {
     margin: auto;
@@ -39,7 +35,7 @@ footer {
 
 form {
     margin: 10px auto;
-    max-width: 400px;
+    max-width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
