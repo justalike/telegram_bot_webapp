@@ -37,7 +37,7 @@ label {
 
 
 input {
-    width: 100%;
+    
     border: none;
     border-bottom: 1px solid lightgrey;
     border-radius: 3px;
@@ -48,7 +48,7 @@ input {
 }
 
 select {
-    width: 100%;
+   
     border: none;
     border-bottom: 1px solid lightgrey;
     border-radius: 3px;
