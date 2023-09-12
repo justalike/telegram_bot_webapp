@@ -1,54 +1,55 @@
-$.extend($.ui.slider.prototype.options, { animate: 300 });
+// Long MA Slider
+const longMASlider = document.querySelector("#longMA-slider");
+const longMAValue = document.querySelector("#longMA-value");
 
-// Long MA Slider 
-const longMASlider = $("#longMA-slider"); 
-const longMAValue = $("#longMA-value");
-
-longMASlider.slider({
-    max: 500,
-    min: 1,
-    range: false, 
-    slide: function(event, ui) { longMAValue.val(ui.value); } });
-
-longMAValue.on("input", function() { const value = $(this).val(); longMASlider.slider("value", value); });
-
-// Short MA Slider 
-const shortMASlider = $("#shortMA-slider"); const shortMAValue = $("#shortMA-value");
-
-shortMASlider.slider({
-    max: 500,
-    min: 1,
-    range: false,
-    slide: function(event, ui) { shortMAValue.val(ui.value); } });
-
-shortMAValue.on("input", function() { const value = $(this).val(); shortMASlider.slider("value", value); });
-
-// Long X Slider 
-const longXSlider = $("#longX-slider"); const longXValue = $("#longX-value");
-
-longXSlider.slider({
-    max: 50,
-    min: 1,
-    range: false,
-    slide: function(event, ui) { longXValue.val(ui.value); } 
+longMASlider.addEventListener("input", function(event) {
+  const value = event.target.value;
+  longMAValue.value = value;
 });
 
-longXValue.on("input", function() { const value = $(this).val(); longXSlider.slider("value", value); });
+longMAValue.addEventListener("input", function(event) {
+  const value = event.target.value;
+  longMASlider.value = value;
+});
 
-// Short X Slider 
-const shortXSlider = $("#shortX-slider"); const shortXValue = $("#shortX-value");
+// Short MA Slider
+const shortMASlider = document.querySelector("#shortMA-slider");
+const shortMAValue = document.querySelector("#shortMA-value");
 
-shortXSlider.slider({
-    max: 50,
-    min: 1,
-    range: false,
-    slide: function(event, ui) { shortXValue.val(ui.value); } });
+shortMASlider.addEventListener("input", function(event) {
+  const value = event.target.value;
+  shortMAValue.value = value;
+});
 
-shortXValue.on("input", function() { const value = $(this).val(); shortXSlider.slider("value", value); })
+shortMAValue.addEventListener("input", function(event) {
+  const value = event.target.value;
+  shortMASlider.value = value;
+});
 
-$("#longMA-slider, #shortMA-slider, #longX-slider, #shortX-slider")
-    .slider("pips", {
-        first: "pip",
-        last: "pip"
-    })
-    .slider("float");
+// Long X Slider
+const longXSlider = document.querySelector("#longX-slider");
+const longXValue = document.querySelector("#longX-value");
+
+longXSlider.addEventListener("input", function(event) {
+  const value = event.target.value;
+  longXValue.value = value;
+});
+
+longXValue.addEventListener("input", function(event) {
+  const value = event.target.value;
+  longXSlider.value = value;
+});
+
+// Short X Slider
+const shortXSlider = document.querySelector("#shortX-slider");
+const shortXValue = document.querySelector("#shortX-value");
+
+shortXSlider.addEventListener("input", function(event) {
+  const value = event.target.value;
+  shortXValue.value = value;
+});
+
+shortXValue.addEventListener("input", function(event) {
+  const value = event.target.value;
+  shortXSlider.value = value;
+});
