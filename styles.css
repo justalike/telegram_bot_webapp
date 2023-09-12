@@ -184,10 +184,12 @@ button:hover {
   
   .autocomplete-items {
     position: absolute;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #4a4a4ac6;
     border-bottom: none;
     border-top: none;
     z-index: 99;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
     /*position the autocomplete items to be the same width as the container:*/
     top: 100%;
     left: 0;
@@ -197,8 +199,6 @@ button:hover {
   .autocomplete-items div {
     padding: 10px;
     cursor: pointer;
-    background-color: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
     border-bottom: 1px solid #d4d4d4; 
   }
   
