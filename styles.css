@@ -54,7 +54,7 @@ form {
 
 label {
     font-weight: bold;
-    color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
     text-align: right;
     margin-right: 10px;
 }
@@ -65,7 +65,7 @@ input {
     border-radius: 3px;
     padding: 5px 10px;
     font-size: 16px;
-    color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
     background-color: var(--tg-theme-secondary-bg-color);
 }
 
@@ -99,7 +99,7 @@ button:hover {
     width: 100%;
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
-    text-align: right;
+    text-align: auto;
     border-radius: 5px;
     padding: 5px;
     position: absolute;
