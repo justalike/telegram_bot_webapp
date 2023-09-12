@@ -17,6 +17,7 @@ body {
     margin-left: 100px;
 }
 
+
 form {
     margin: 10px auto;
     max-width: 400px;
@@ -30,6 +31,24 @@ form {
     form {
         grid-template-columns: 1fr; /* Display a single column */
     }
+    #logo {
+        margin-left: 0; /* Reset the margin for the logo on smaller screens */
+    }
+
+    .slider-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .slider-container input[type="number"].slider-value {
+        margin-top: 5px; /* Adjust the margin as needed */
+    }
+    .slider-container input[type="range"].slider-value {
+       height: 20px; /* Adjust the margin as needed */
+       width: 50%;
+    }
+
 }
 
 label {
