@@ -35,6 +35,17 @@ form {
         margin-left: 0; /* Reset the margin for the logo on smaller screens */
     }
 
+    .input-container { 
+        display: grid;
+         grid-template-columns: 1fr auto; 
+         gap: 15px; 
+         align-items: center; }
+
+    .input-container label { 
+        font-weight: bold; 
+        color: var(--tg-theme-text-color); 
+        text-align: right; }
+
     .slider-container {
         display: flex;
         flex-wrap: wrap;
@@ -54,6 +65,7 @@ form {
 label {
     font-weight: bold;
     color: var(--tg-theme-text-color);/*rgb(60, 128, 150);*/
+    text-align: right;
 }
 
 input {
