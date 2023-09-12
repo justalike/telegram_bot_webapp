@@ -81,24 +81,23 @@ input {
 }
 
 button {
-    width: 75%;
+    width: 100%;
+   
     margin: 0 auto;
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
-    padding: 10px;
-    border-bottom: 1px var(--tg-theme-secondary-bg-color);
+    padding: 15px;
     cursor: pointer;
-    border-radius: 13px;
+    border-radius: 10px;
 }
 
 button:active {
-    transform: scale(1.2);
+    transform: scale(0.95);
+    background: var(--tg-theme-secondary-bg-color);
 }
 
 button:hover {
-    border-bottom: 1px var(--tg-theme-bg-color);
     border-radius: 17px;
-    background: var(--tg-theme-secondary-bg-color);
 }
 
 .tooltip {
@@ -113,13 +112,14 @@ button:hover {
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
     text-align: auto;
+    font-weight: 500;
     border-radius: 5px;
     padding: 5px;
     position: absolute;
     z-index: 1;
     top: -35px;
     left: 50%;
-    transform: translateX(+33%);
+    transform: translateX(+53%);
     opacity: 0;
     transition: opacity 0.2s;
 }
@@ -133,7 +133,7 @@ button:hover {
     content: "?";
     position: absolute;
     top: -10px;
-    right: -5px;
+    right: -8px;
     width: 20px;
     height: 20px;
     border-radius: 50%;

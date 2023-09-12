@@ -10,7 +10,11 @@ let telegram = window.Telegram.WebApp;
         let shortMA = document.getElementById('shortMA-value');
         let longX = document.getElementById('longX-value');
         let shortX = document.getElementById('shortX-value');
-
+        console.log(longMA.value)
+        if (isNaN(longMA.value)) {
+          showError(longMA, 'Input must be a number');
+          return; // Stop the function execution if the validation fails
+        }
         //  
         let data = {
           pair: pair.value,
@@ -26,3 +30,4 @@ let telegram = window.Telegram.WebApp;
 
         telegram.close()
       })
+
