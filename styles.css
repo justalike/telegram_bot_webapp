@@ -165,6 +165,8 @@ button:hover {
 .autocomplete {
     position: relative;
     display: inline-block;
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
   }
 /*   
   input {
