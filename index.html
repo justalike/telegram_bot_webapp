@@ -24,23 +24,19 @@
 
   </header>
   <main>
-    
-    <form>
-      <div>
-        <div class="tooltip">
+  
+      <form autocomplete="off">
+        <div class="autocomplete">
           <label for="pair">Торговая пара</label>
-          <span class="tooltip-text">Любой актив на Binance Spot</span>
+          <input type="text" id="pair" name="pair" placeholder="BTCUSDT">
         </div>
-        <input type="text" id="pair" name="pair", required oninput="filterPairs(this.value)">
-        <select id="pairSuggestions" required onchange="selectPair()">
-          <option value="" disabled selected hidden>Select a pair</option>
-        </select>
-      </div>
+      
+      
       <div>
           <label for="timeframe">Таймфрейм</label>
           <select id="timeframe" name="timeframe" required>
-          <option value="">Выберите таймфрейм</option>
-        </select>
+          <option value="15m">15m</option>
+          </select>
       </div>
 
       <div class="slider-container"> <div class="tooltip">
@@ -78,7 +74,7 @@
       <button type="submit">Создать оповещение</button>
      </form>
 
-     <script src="pair_filter.js"></script>
+     <script src="autocomplete.js"></script>
      <script src="tf-options.js"></script>
      <script src="telegram-options.js"></script>
    
