@@ -24,13 +24,18 @@
 
   </header>
   <main>
+    
     <form>
-      <div>  <div class="tooltip">  
-        <label for="pair">Торговая пара</label>
-        <span class="tooltip-text">Любой актив на Binance Spot</span></div>
-        <input type="text" id="pair" name="pair" required>
+      <div>
+        <div class="tooltip">
+          <label for="pair">Торговая пара</label>
+          <span class="tooltip-text">Любой актив на Binance Spot</span>
+        </div>
+        <input type="text" id="pair" name="pair" required oninput="filterPairs(this.value)">
+        <select id="pairSuggestions" onchange="selectPair()">
+          <option value="" disabled selected hidden>Select a pair</option>
+        </select>
       </div>
-
       <div>
           <label for="timeframe">Таймфрейм</label>
           <select id="timeframe" name="timeframe" required>
@@ -73,9 +78,10 @@
       <button type="submit">Создать оповещение</button>
      </form>
 
-
+     <script src="pair_filter.js"></script>
      <script src="tf-options.js"></script>
      <script src="telegram-options.js"></script>
+   
     
   </main>
   <footer>
@@ -83,5 +89,6 @@
   </footer>
 </body>
 <script src="./slider.js"></script>
+
 
 </html>
