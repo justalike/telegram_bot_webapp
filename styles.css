@@ -1,16 +1,29 @@
-header, footer, body {
-    text-align: center;
-    width: 100%;
-    margin: auto auto;
-    padding: 20px;
-    background: var(--background-color);
-    color: var(--text-color);
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Global Styles */
 body {
+    text-align: center;
     font-family: Arial, sans-serif;
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-bg-color);
+    padding: 20px;
 }
 
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
 
 #telegram-icon {
     width: 50px;
@@ -23,54 +36,27 @@ body {
     transform: scale(2);
 }
 
-#logo {
-    width: 100px;
-    height: 100px;
-    margin-left: auto;
-}
-
+/* Form Styles */
 form {
     margin: 10px auto;
-    max-width: auto;
+    max-width: 600px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-/* Add a media query for smaller screens */
+/* Media Query for smaller screens */
 @media (max-width: 600px) {
     form {
-        grid-template-columns: 1fr; /* Display a single column */
-    }
-
-    #logo {
-        margin-left: 0; /* Reset the margin for the logo on smaller screens */
-    }
-
-    .slider-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .slider-container label {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .slider-container input[type="number"].slider-value {
-        margin-top: 5px; /* Adjust the margin as needed */
-    }
-
-    .slider-container input[type="range"].slider-value {
-        height: 20px; /* Adjust the margin as needed */
-        width: 60%;
-        margin: 0 auto;
+        grid-template-columns: 1fr;
     }
 }
 
 label {
     font-weight: bold;
-    color: var(--text-color);
+    color: var(--tg-theme-bg-color);
     text-align: right;
+    margin-right: 10px;
 }
 
 input {
@@ -79,20 +65,19 @@ input {
     border-radius: 3px;
     padding: 5px 10px;
     font-size: 16px;
-    color: var(--text-color);
-    background-color: var(--secondary-bg-color);
+    color: var(--tg-theme-bg-color);
+    background-color: var(--tg-theme-secondary-bg-color);
 }
 
 button {
     width: 75%;
     margin: 0 auto;
-    background-color: var(--button-color);
-    color: var(--button-text-color);
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
     padding: 10px;
     border: none;
     cursor: pointer;
     border-radius: 13px;
-    /* grid-column: span 2; */
 }
 
 button:active {
@@ -100,19 +85,20 @@ button:active {
 }
 
 button:hover {
-    background: var(--secondary-bg-color);
+    background: var(--tg-theme-secondary-bg-color);
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
+    font-display: block;
 }
 
 .tooltip .tooltip-text {
     visibility: hidden;
     width: 100%;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
     text-align: right;
     border-radius: 5px;
     padding: 5px;
@@ -134,7 +120,7 @@ button:hover {
     content: "?";
     position: absolute;
     top: -10px;
-    right: -20px;
+    right: -5px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
