@@ -31,7 +31,7 @@ label {
     font-weight: bold;
     color: var(--tg-theme-text-color);
     text-align: right;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 select {
@@ -57,17 +57,13 @@ input {
 
 
 .slider-container {
-   
-    
     align-items: center;
     max-width: 100%;
-    
-  
 }
+
 .slider-container label {
     width: 100%;
     text-align: center;
-   
 }
 
 .slider-container input[type="range"]{
