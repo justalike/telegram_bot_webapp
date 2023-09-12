@@ -21,36 +21,43 @@
   </header>
   <main>
     <form>
-      <div> 
-        <label for="pair">Торговая пара:</label>
+      <div>  <div class="tooltip">  
+        <label for="pair">Торговая пара</label>
+        <span class="tooltip-text">Любой актив на Binance Spot</span></div>
         <input type="text" id="pair" name="pair" required>
       </div>
 
-      <div>
-        <label for="timeframe">Таймфрейм:</label>
+      <div> <div class="tooltip">
+        <label for="timeframe">Таймфрейм</label>
+        <span class="tooltip-text">Любой стандартный (от 1s до 1M) таймфрейм на Binance Spot </span></div>
         <input type="text" id="timeframe" name="timeframe" required>
       </div>
 
-      <div class="slider-container">
-        <label for="longMA-value">#1 MA:</label>
-        <input type="range" min="0" max="100" value="50" id="longMA-slider">
+      <div class="slider-container"> <div class="tooltip">
+        <label for="longMA-value">Длинная MA</label>
+        <span class="tooltip-text">Количество свечей для расчёта средней скользящей </span></div>
+        <input type="range" min="0" max="500" value="50" id="longMA-slider">
         <input type="number" id="longMA-value" , value=50 class="slider-value" min="1" max="500">
       </div>
 
-      <div class="slider-container">
-        <label for="shortMA-value">#2 MA:</label>
-        <input type="range" min="0" max="100" value="50" id="shortMA-slider">
+      <div class="slider-container"> <div class="tooltip">
+        <label for="shortMA-value">Короткая MA</label>
+        <span class="tooltip-text">Количество свечей для расчёта средней скользящей </span></div>
+        <input type="range" min="0" max="500" value="50" id="shortMA-slider">
         <input type="number" id="shortMA-value", value=20 class="slider-value" min="1" max="500">
       </div>
 
-      <div class="slider-container">
-        <label for="longX-value">#1 коэф:</label>
+      <div class="slider-container"> <div class="tooltip">
+        <label for="longX-value">Длинный X</label>
+        <span class="tooltip-text">Мультипликатор (коэффициент) для длинной средней скользящей</span></div>
         <input type="range" min="0" max="100" value="50" id="longX-slider">
         <input type="number" id="longX-value", value=2 class="slider-value" min="1" max="50">
       </div>
 
       <div class="slider-container">
-        <label for="shortX-value">#2 коэф:</label>
+        <div class="tooltip">
+        <label for="shortX-value">Короткий X</label>
+        <span class="tooltip-text">Мультипликатор (коэффициент) для короткой средней скользящей</span></div>
         <input type="range" min="0" max="100" value="50" id="shortX-slider">
         <input type="number" id="shortX-value" , value=5 class="slider-value" min="1" max="50">
       </div>
@@ -58,7 +65,7 @@
 
     
      <form id="sendButton" class = "sendButton">
-      <button type="submit">Отправить</button>
+      <button type="submit">Создать оповещение</button>
      </form>
 
     
