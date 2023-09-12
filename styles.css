@@ -69,8 +69,9 @@ input {
 }
 
 .slider-container input[type="range"]{
-    width: 75%;
-    margin: 0 auto;
+    width: 35%;
+    height: 0;
+    margin: 0px auto;
 }
 
 .slider-container input[type="number"].slider-value {
@@ -81,7 +82,7 @@ input {
 button {
     width: 100%;
    
-    margin: 0 auto;
+    margin: 0px auto;
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     padding: 15px;
