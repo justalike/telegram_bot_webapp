@@ -5,38 +5,20 @@
     padding: 0;
 }
 
-/* Global Styles */
 body {
     text-align: center;
     font-family: Arial, sans-serif;
     background: var(--tg-theme-bg-color);
-    color: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color);
     padding: 20px;
 }
 
-/* Header Styles */
 header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-#logo {
-    width: 100px;
-    height: 100px;
-}
 
-#telegram-icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    transition: transform 0.3s;
-}
-
-#telegram-icon:hover {
-    transform: scale(2);
-}
-
-/* Form Styles */
 form {
     margin: 10px auto;
     max-width: 600px;
@@ -45,18 +27,21 @@ form {
     gap: 15px;
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 600px) {
-    form {
-        grid-template-columns: 1fr;
-    }
-}
-
 label {
     font-weight: bold;
     color: var(--tg-theme-text-color);
     text-align: right;
     margin-right: 10px;
+}
+
+select {
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: var(--tg-theme-text-color);
+    background-color: var(--tg-theme-secondary-bg-color);
 }
 
 input {
@@ -69,13 +54,39 @@ input {
     background-color: var(--tg-theme-secondary-bg-color);
 }
 
+
+
+.slider-container {
+   
+    
+    align-items: center;
+    max-width: 100%;
+    
+  
+}
+.slider-container label {
+    width: 100%;
+    text-align: center;
+   
+}
+
+.slider-container input[type="range"]{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.slider-container input[type="number"].slider-value {
+    margin-top: 5px; /* Adjust the margin as needed */
+    width: 25%;
+}
+
 button {
     width: 75%;
     margin: 0 auto;
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     padding: 10px;
-    border: none;
+    border-bottom: 1px var(--tg-theme-secondary-bg-color);
     cursor: pointer;
     border-radius: 13px;
 }
@@ -85,6 +96,8 @@ button:active {
 }
 
 button:hover {
+    border-bottom: 1px var(--tg-theme-bg-color);
+    border-radius: 17px;
     background: var(--tg-theme-secondary-bg-color);
 }
 
@@ -130,3 +143,29 @@ button:hover {
     line-height: 20px;
     cursor: pointer;
 }
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#telegram-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+#telegram-icon:hover {
+    transform: scale(2);
+}
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+
