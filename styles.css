@@ -62,10 +62,12 @@ input {
     border-radius: 3px;
     padding: 5px 10px;
     font-size: 16px;
-    background-color: rgba(var(--tg-theme-text-color), 0.67)
+    color: var(--tg-theme-text-color);
+    background-color: var(--tg-theme-secondary-bg-color);
 }
 
 button {
+    width: 50%;
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     padding: 10px;
@@ -76,7 +78,7 @@ button {
 }
 
 button:active {
-    transform: scale(0.95);
+    transform: scale(0.9);
 }
 
 button:hover {

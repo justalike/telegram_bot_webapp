@@ -7,7 +7,7 @@
   <title>Volume Detector add pair</title>
   <link rel="stylesheet" type="text/css" href="./styles.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  
+
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -32,29 +32,25 @@
       </div>
 
       <div class="slider-container">
-        <label for="longMA-value">Длинная MA:</label>
+        <label for="longMA-value">#1 MA:</label>
         <input type="range" min="0" max="100" value="50" id="longMA-slider">
         <input type="number" id="longMA-value" , value=50 class="slider-value" min="1" max="500">
       </div>
 
       <div class="slider-container">
-        <label for="shortMA-value">Короткая MA:</label>
+        <label for="shortMA-value">#2 MA:</label>
         <input type="range" min="0" max="100" value="50" id="shortMA-slider">
         <input type="number" id="shortMA-value", value=20 class="slider-value" min="1" max="500">
       </div>
 
       <div class="slider-container">
-        <label for="longX-value">Длинный множитель:</label>
-
-        
+        <label for="longX-value">#1 коэф:</label>
         <input type="range" min="0" max="100" value="50" id="longX-slider">
         <input type="number" id="longX-value", value=2 class="slider-value" min="1" max="50">
       </div>
 
       <div class="slider-container">
-        <label for="shortX-value">Короткий множитель:</label>
-
-       
+        <label for="shortX-value">#2 коэф:</label>
         <input type="range" min="0" max="100" value="50" id="shortX-slider">
         <input type="number" id="shortX-value" , value=5 class="slider-value" min="1" max="50">
       </div>
