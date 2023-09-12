@@ -9,6 +9,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
  
@@ -19,7 +20,7 @@
   <header>
     <img src="circle logo.png" alt="Logo" id="logo">
     <h2> Volume Detector Bot</h2>
-    <h3> Чтобы создать оповещение введите нужные вам параметры используя форму ниже:</h3>
+    <h3> Чтобы создать оповещение введите желаемые параметры:</h3>
 
   </header>
   <main>
@@ -30,10 +31,11 @@
         <input type="text" id="pair" name="pair" required>
       </div>
 
-      <div> <div class="tooltip">
-        <label for="timeframe">Таймфрейм</label>
-        <span class="tooltip-text">Любой стандартный (от 1s до 1M) таймфрейм на Binance Spot </span></div>
-        <input type="text" id="timeframe" name="timeframe" required>
+      <div>
+          <label for="timeframe">Таймфрейм</label>
+        <select id="timeframe" name="timeframe" required>
+          <option value="">Выберите таймфрейм</option>
+        </select>
       </div>
 
       <div class="slider-container"> <div class="tooltip">
@@ -71,41 +73,13 @@
       <button type="submit">Создать оповещение</button>
      </form>
 
+
+     <script src="tf-options.js"></script>
+     <script src="telegram-options.js"></script>
     
-
-    <script>
-      let telegram = window.Telegram.WebApp;
-      let logo = document.getElementById('logo');
-      telegram.expand()
-      let submitButton = document.getElementById('sendButton');
-
-      submitButton.addEventListener("click", () => {
-        let pair = document.getElementById('pair');
-        let timeframe = document.getElementById('timeframe');
-        let longMA = document.getElementById('longMA-value');
-        let shortMA = document.getElementById('shortMA-value');
-        let longX = document.getElementById('longX-value');
-        let shortX = document.getElementById('shortX-value');
-
-        //  
-        let data = {
-          pair: pair.value,
-          timeframe: timeframe.value,
-          longMA: longMA.value,
-          shortMA: shortMA.value,
-          longX: longX.value,
-          shortX: shortX.value,
-
-        }
-
-        telegram.sendData(JSON.stringify(data))
-
-        telegram.close()
-      })
-    </script>
   </main>
   <footer>
- <a href="https://t.me/PxlRS"> <img src="./telegram_icon.png" alt="Telegram" id="telegram-icon"> </a>
+      <a href="https://t.me/PxlRS"> <img src="./telegram_icon.png" alt="Telegram" id="telegram-icon"> </a>
   </footer>
 </body>
 <script src="./slider.js"></script>
