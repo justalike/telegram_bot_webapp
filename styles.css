@@ -6,10 +6,29 @@ header, footer, body {
     color: var(--tg-theme-text-color);
 }
 
+header {
+    text-align: center;
+}
+
+
 body {
     margin: auto;
     font-family: Arial, sans-serif;
 }
+
+footer { 
+    text-align: center; 
+}
+
+#telegram-icon {
+    width: 50px ;
+    height: 50px ;
+    transition: transform 0.3s; 
+}
+
+#telegram-icon:hover {
+    transform: scale(2); 
+} 
 
 #logo {
     width: 100px;
@@ -69,6 +88,7 @@ input {
 
 button {
     width: 75%;
+    margin: 0 auto;
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     padding: 10px;
