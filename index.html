@@ -31,8 +31,8 @@
           <label for="pair">Торговая пара</label>
           <span class="tooltip-text">Любой актив на Binance Spot</span>
         </div>
-        <input type="text" id="pair" name="pair" required oninput="filterPairs(this.value)">
-        <select id="pairSuggestions" onchange="selectPair()">
+        <input type="text" id="pair" name="pair", required oninput="filterPairs(this.value)">
+        <select id="pairSuggestions" required onchange="selectPair()">
           <option value="" disabled selected hidden>Select a pair</option>
         </select>
       </div>
