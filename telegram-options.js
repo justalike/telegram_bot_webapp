@@ -1,4 +1,4 @@
-     import { allPairs } from './pairs.js'
+import { allPairs } from './pairs.js'
 
       let telegram = window.Telegram.WebApp;
       telegram.expand()
