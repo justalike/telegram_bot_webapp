@@ -21,7 +21,7 @@ import { allPairs } from './pairs.js'
           shortThreshold: +shortX.value,
 
         }
-        alert(JSON.stringify(data))
+       
         if (!timeframe.value || !longMA.value || !shortMA.value || !longX.value || !shortX.value) {
           alert('Заполните все поля')
           return
