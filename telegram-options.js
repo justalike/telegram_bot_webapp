@@ -17,8 +17,8 @@ import { allPairs } from './pairs.js'
           timeframe: timeframe.value,
           longMA: longMA.value,
           shortMA: shortMA.value,
-          longX: longX.value,
-          shortX: shortX.value,
+          longThreshold: longX.value,
+          shortThreshold: shortX.value,
 
         }
         alert(JSON.stringify(data))
