@@ -1,9 +1,11 @@
-let telegram = window.Telegram.WebApp;
+      import { pairs, pairs_, pairs__, pairs___ } from "./pairs";
+
+      let telegram = window.Telegram.WebApp;
       telegram.expand()
       let submitButton = document.getElementById('sendButton');
 
       submitButton.addEventListener("click", () => {
-        let pair = document.getElementById('pair')||document.getElementById('pairSuggestions');
+        let pair = document.getElementById('pair');
         let timeframe = document.getElementById('timeframe');
         let longMA = document.getElementById('longMA-value');
         let shortMA = document.getElementById('shortMA-value');
@@ -20,7 +22,22 @@ let telegram = window.Telegram.WebApp;
           shortX: shortX.value,
 
         }
-        console.log(data)
+        alert(JSON.stringify(data))
+        if (!timeframe.value || !longMA.value || !shortMA.value || !longX.value || !shortX.value) {
+          alert('Заполните все поля')
+          return
+        }
+
+        if (validatePair(pair.value)) return alert('Вы не выбрали пару или она указана некорректно')
+        
+        
+       function validatePair(p) {
+        if (!p) return
+        const allPairs = pairs.concat(pairs_, pairs__, pairs___)
+        return allPairs.includes( p.toUpperCase() ) 
+       }
+
+
 
         telegram.sendData(JSON.stringify(data))
 
