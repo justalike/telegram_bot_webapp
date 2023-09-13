@@ -42,23 +42,22 @@ input {
     border: none;
     border-bottom: 1px solid lightgrey;
     border-radius: 3px;
-    padding: 5px 10px;
+    padding: 5px 15px;
     font-size: 16px;
     
 }
 
 select {
-    background-color: var(--tg-theme-secondary-bg-color);
+    /* background-color: var(--tg-theme-secondary-bg-color); */
+    width: 40px;
+    background-color:var(--tg-theme-secondary-bg-color);
     color: var(--tg-theme-text-color);
     border: none;
     border-bottom: 1px solid lightgrey;
     border-radius: 3px;
-    padding: 5px 10px;
-    padding-top: 20px;
+    padding:0px 5px;
     font-size: 16px;
-} 
-
-
+}
 
 
 .slider-container {
@@ -168,7 +167,7 @@ button:hover {
     background-color: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
   }
-  
+/*   
   input {
     border: 1px solid transparent;
     background-color: var(--tg-theme-bg-color);
@@ -180,7 +179,7 @@ button:hover {
     background-color: var(--tg-theme-bg-color);
     width: 100%;
   }
-  
+   */
   
   .autocomplete-items {
     position: absolute;
