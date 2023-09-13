@@ -15,10 +15,10 @@ import { allPairs } from './pairs.js'
         let data = {
           pair: pair.value,
           timeframe: timeframe.value,
-          longMA: longMA.value,
-          shortMA: shortMA.value,
-          longThreshold: longX.value,
-          shortThreshold: shortX.value,
+          longMA: +longMA.value,
+          shortMA: +shortMA.value,
+          longThreshold: +longX.value,
+          shortThreshold: +shortX.value,
 
         }
         alert(JSON.stringify(data))
