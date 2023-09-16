@@ -11,5 +11,8 @@ const selectElement = document.getElementById('timeframe');
         const option = document.createElement('option');
         option.value = timeframe;
         option.text = timeframe;
+        if (timeframe === '1h') {
+          option.selected = true;
+        }
         selectElement.appendChild(option);
       });
