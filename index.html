@@ -19,8 +19,8 @@
 
   <header>
     <img src="circle logo.png" alt="Logo" id="logo">
-    <h2> Volume Detector Bot</h2>
-    <h3> Чтобы создать оповещение введите желаемые параметры:</h3>
+    <h3> Volume Detector Bot</h2>
+    <h4> Чтобы создать оповещение введите желаемые параметры:</h3>
 
   </header>
   <main>
@@ -40,21 +40,21 @@
       <div class="slider-container"> <div class="tooltip">
         <label for="longMA-value">Длинная MA</label>
         <span class="tooltip-text">Количество свечей для расчёта средней скользящей </span></div>
-        <input type="range" min="1" max="250" id="longMA-slider">
+        <input type="range" min="50" max="250" id="longMA-slider">
         <input type="number" id="longMA-value", value=50 class="slider-value" min="1" max="500">
       </div>
 
       <div class="slider-container"> <div class="tooltip">
         <label for="shortMA-value">Короткая MA</label>
         <span class="tooltip-text">Количество свечей для расчёта средней скользящей </span></div>
-        <input type="range" min="1" max="250" id="shortMA-slider">
+        <input type="range" min="14" max="100" id="shortMA-slider">
         <input type="number" id="shortMA-value", value=20 class="slider-value" min="1" max="500">
       </div>
 
       <div class="slider-container"> <div class="tooltip">
         <label for="longX-value">Длинный X</label>
         <span class="tooltip-text">Мультипликатор (коэффициент) для длинной средней скользящей</span></div>
-        <input type="range" min="1" max="50" id="longX-slider">
+        <input type="range" min="1" max="10" id="longX-slider">
         <input type="number" id="longX-value", value=2 class="slider-value" min="1" max="50">
       </div>
 
@@ -62,7 +62,7 @@
         <div class="tooltip">
         <label for="shortX-value">Короткий X</label>
         <span class="tooltip-text">Мультипликатор (коэффициент) для короткой средней скользящей</span></div>
-        <input type="range" min="1" max="50" id="shortX-slider">
+        <input type="range" min="1" max="10" id="shortX-slider">
         <input type="number" id="shortX-value" , value=5 class="slider-value" min="1" max="50">
       </div>
     </form>
