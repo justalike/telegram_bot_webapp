@@ -115,7 +115,7 @@ button:hover {
 }
 
 .mini-button:hover {
-    background: ;
+    background: var(--tg-theme-secondary-bg-color);
 }
 
 
