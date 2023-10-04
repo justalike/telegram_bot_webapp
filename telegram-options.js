@@ -51,7 +51,12 @@ const addPairInput = () => {
 addPairButton.addEventListener('click', addPairInput);
 
 submitButton.addEventListener("click", () => {
-  // ... (existing code)
+  
+  let timeframe = document.getElementById('timeframe');
+  let longMA = document.getElementById('longMA-value');
+  let shortMA = document.getElementById('shortMA-value');
+  let longX = document.getElementById('longX-value');
+  let shortX = document.getElementById('shortX-value');
 
   const pairs = Array.from(pairContainer.querySelectorAll('input[name="pair"]'))
     .map(input => input.value.toUpperCase())
