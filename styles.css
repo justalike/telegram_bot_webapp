@@ -99,6 +99,26 @@ button:hover {
     border-radius: 17px;
 }
 
+.mini-button {
+    width: auto;
+    margin: 0 5px;
+    background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mini-button:active {
+    transform: scale(0.95);
+    background: var(--tg-theme-secondary-bg-color);
+}
+
+.mini-button:hover {
+    background: ;
+}
+
+
 .tooltip {
     position: relative;
     display: inline-block;

@@ -1,6 +1,6 @@
 import {allPairs as pairs} from './pairs.js'
 
-function autocomplete(inp, arr) {
+export function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
   var currentFocus;
@@ -95,6 +95,8 @@ function autocomplete(inp, arr) {
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
   });
+
+  
 }
 
 
@@ -102,4 +104,9 @@ function autocomplete(inp, arr) {
 /*An array containing all the country names in the world:*/
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("pair"), pairs);
+const pairInputs = document.querySelectorAll('input[name="pair"]');
+
+// Apply autocomplete to all of them
+pairInputs.forEach(input => {
+  autocomplete(input, pairs);
+}); // Apply your existing autocomplete function to the new input

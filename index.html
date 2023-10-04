@@ -24,12 +24,15 @@
   </header>
   <main>
   
-      <form autocomplete="off">
-        <div class="autocomplete">
-          <label for="pair">Торговая пара</label>
-          <input type="text" id="pair" name="pair" placeholder="BTCUSDT" required>
-        </div>
+    <div id="pair-container">
+      <div class="autocomplete">
+        <label for="pair">Торговая пара</label>
+        <input type="text" id="pair" name="pair" placeholder="BTCUSDT" required>
+      </div>
       
+    </div>
+    <button type="button" class="mini-button" id="add-pair-button" >[+]</button>
+    
       
       <div>
           <label for="timeframe">Таймфрейм</label>
